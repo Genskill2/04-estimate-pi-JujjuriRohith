@@ -4,6 +4,14 @@
 #include <math.h>
 
 float wallis_pi(int);
+float wallis_pi(int n){
+float product=1;
+    for(int i=1; i<=n; i++){	
+    	int sqr=i*i;
+    	product=((4*sqr)/((4*sqr)-1))*product;
+    }
+    return product*2;
+}
 
 int main(void) {
   float pi;
