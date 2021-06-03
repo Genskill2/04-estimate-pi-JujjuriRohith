@@ -23,7 +23,8 @@ float mc_pi(int n){
         }
 
     }
-    return (4.0*count/n) ;
+   
+  return (4.0*count/n) ;
 }
 
 
