@@ -3,15 +3,15 @@
 #include <stdio.h>
 #include <math.h>
 
-float mc_pi(float);
+float mc_pi(int);
 
 float frandom() {
   long int q = random();
   float ret = (float)q/(float)RAND_MAX;
   return ret;
 }
-float mc_pi(float dart){
-  float count=0;
+float mc_pi(int dart){
+  int count=0;
   float x,y;
   for(int i=0;i<dart;i++){
     x=frandom();
@@ -21,7 +21,7 @@ float mc_pi(float dart){
       count++;
         }
     }
-  float pi=(count*4/dart);
+  float pi=(count*4.0/dart);
   return pi;
 }
 
