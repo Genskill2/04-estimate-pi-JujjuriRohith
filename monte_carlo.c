@@ -13,7 +13,7 @@ float frandom() {
 float mc_pi(int dart){
   int count=0;
   float x,y;
-  for(int i=0;i<dart;i++){
+  for(int i=0;i<=dart;i++){
     x=frandom();
     y=frandom();
     float dist=sqrt((x*x)+(y*y));
