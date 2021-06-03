@@ -16,7 +16,7 @@ float mc_pi(int dart){
   for(int i=0;i<=dart;i++){
     x=frandom();
     y=frandom();
-    float dist=sqrt((x*x)+(y*y));
+    float dist=pow((x*x)+(y*y),0.5);
     if(dist <= 1){
       count++;
         }
